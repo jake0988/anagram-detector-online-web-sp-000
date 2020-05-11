@@ -14,14 +14,14 @@ attr_accessor :word
     @word.sort!
     @word = @word.join
     o = 0
-    list.each_with_index do |i, o|
-    array[o] = i.split("")
+    list.each_with_index do |i, idx|
+    array = i.split("")
     array.sort!
     array = array.join
     binding.pry
 
     if @word == array
-      a << list
+      a << list[idx]
   end
     end
     a
