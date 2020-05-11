@@ -13,7 +13,7 @@ attr_accessor :word
     @word = @word.split("")
     @word.sort!
     @word = @word.join
-    list.each.to_index do |i|
+    list.each.with_index do |i|
     array = i.split("")
     array.sort!
     array = array.join
