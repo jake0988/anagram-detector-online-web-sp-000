@@ -9,6 +9,7 @@ attr_accessor :word
 
   def match(list)
     a = []
+    b = @word
     array = []
     @word = @word.split("")
     @word.sort!
@@ -18,7 +19,7 @@ attr_accessor :word
     array.sort!
     array = array.join
     if @word == array
-      a << @word
+      a << b
   end
     end
     a
