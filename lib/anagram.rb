@@ -9,17 +9,16 @@ attr_accessor :word
 
   def match(list)
     a = []
-    b = @word
     array = []
     @word = @word.split("")
     @word.sort!
     @word = @word.join
-    list.each do |i|
+    list.each.to_index do |i|
     array = i.split("")
     array.sort!
     array = array.join
     if @word == array
-      a << b
+      a << @word
   end
     end
     a
