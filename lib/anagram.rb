@@ -15,13 +15,13 @@ attr_accessor :word
     @word = @word.join
     o = 0
     list.each_with_index do |i, o|
-    array = i.split("")
+    array[o] = i.split("")
     array.sort!
     array = array.join
     binding.pry
 
     if @word == array
-      a << @word
+      a << list
   end
     end
     a
