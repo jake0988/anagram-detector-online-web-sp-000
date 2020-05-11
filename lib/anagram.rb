@@ -16,7 +16,7 @@ attr_accessor :word
     array = i.split("")
     array.sort!
     array = array.join
-    if @word = array
+    if @word == array
       @word
   end
     end
