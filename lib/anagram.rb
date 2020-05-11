@@ -18,7 +18,7 @@ attr_accessor :word
     array.sort!
     array = array.join
     if @word == array
-      a = @word
+      a << @word
   end
     end
     a
